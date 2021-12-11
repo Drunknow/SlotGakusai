@@ -900,6 +900,7 @@ GameObject:
   - component: {fileID: 854081170}
   - component: {fileID: 854081169}
   - component: {fileID: 854081173}
+  - component: {fileID: 854081172}
   m_Layer: 5
   m_Name: Lever
   m_TagString: Untagged
@@ -1008,6 +1009,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 854081167}
   m_CullTransparentMesh: 1
+--- !u!114 &854081172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854081167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53eb6b38c1d04927bf3be3124e2e5a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message_: 
 --- !u!114 &854081173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1024,7 +1038,7 @@ MonoBehaviour:
   coinService: {fileID: 129813221}
   soundEffectService: {fileID: 2135076742}
   buttonType: 0
-  serialHandler: {fileID: 1838105708}
+  serialHandler: {fileID: 854081172}
 --- !u!1 &972568606
 GameObject:
   m_ObjectHideFlags: 0
@@ -2228,7 +2242,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1838105709}
   - component: {fileID: 1838105708}
-  - component: {fileID: 1838105707}
   m_Layer: 0
   m_Name: AruduinoMaster
   m_TagString: Untagged
@@ -2236,20 +2249,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1838105707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838105706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5b62feb44668407f953588809119382, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serialHandler: {fileID: 1838105708}
-  data: []
 --- !u!114 &1838105708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2262,8 +2261,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e53eb6b38c1d04927bf3be3124e2e5a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portName: /dev/cu.usbserial-0001
-  baudRate: 9600
   message_: 
 --- !u!4 &1838105709
 Transform:
